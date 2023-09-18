@@ -1,1 +1,4 @@
-['Valeron Ziborov -  +37562368123, POLOTSK\n', '\n', 'VANYA ZIB LO -  82713872193, MOSKVA\n', '\n', None, '\n']
+Valery Ziborov -  +37858372958723, VITEBSK
+
+YANA KKASHTANOVA -  =378472348234, 
+

@@ -50,24 +50,37 @@ def rewrite():
         data.write(new)
 
 
+# def delete():
+#     search_line()
+#     want_to_del_data = input('Please, enter the data, that you want to delete: ')
+#     with open('phonebook.txt', 'r', encoding = 'utf-8') as data:
+#         list_of_el = data.readlines()
+#         for el in range(len(list_of_el)):
+#             if want_to_del_data in list_of_el[el]:
+#                 list_of_el[el] = ''
+#     new_data = str(list_of_el)            
+                
+#     with open('phonebook.txt', 'w', encoding = 'utf-8') as data:
+#         data.write(new_data)
+
 def delete():
     search_line()
-    want_to_del_data = input('Please, enter the data, that you want to delete: ')
+    rewrite_data = input('Please, enter the data, that you want to delete: ')
+    new_data = ''
     with open('phonebook.txt', 'r', encoding = 'utf-8') as data:
-        list_of_el = data.readlines()
-        for el in range(len(list_of_el)):
-            if want_to_del_data in list_of_el[el]:
-                list_of_el[el] = ''
-    new_data = str(list_of_el)            
-                
+        old = data.read()
+        new = old.replace(rewrite_data, new_data)
     with open('phonebook.txt', 'w', encoding = 'utf-8') as data:
-        data.write(new_data)
+        data.write(new)
+
+
+
 
 
 
 
 # rewrite()
-delete()
+# delete()
 # input_data()
 # print_data()
 
